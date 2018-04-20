@@ -19,11 +19,10 @@ datos_wm$Dificultad <- factor(datos_wm$Dificultad,
 
 
 # Anova por respuestas correctas ------------------------------------------
-wm_RC <- filter(datos_wm, Modalidad == "RC")
-
+wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad=="HL")
 aovrc <- ezANOVA(
   data = wm_RC, dv = value, wid = Sujeto, between = Turno,
-  within = .(Tarea, Dificultad), return_aov = T
+  within = .(Tarea), return_aov = T
 )
 pairwise.t.test(wm_RC$value, interaction(
   wm_RC$Tarea, wm_RC$Turno,
