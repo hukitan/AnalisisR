@@ -19,7 +19,7 @@ datos_wm$Dificultad <- factor(datos_wm$Dificultad,
 
 
 # Anova por respuestas correctas ------------------------------------------
-wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad=="HL")
+wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad == "HL")
 aovrc <- ezANOVA(
   data = wm_RC, dv = value, wid = Sujeto, between = Turno,
   within = .(Tarea), return_aov = T
@@ -52,3 +52,5 @@ aovdprim <- ezANOVA(
 
 # para algo servira tener las descipciones ----------------
 wm_RC_desc <- psych::describeBy(datos_wm_wide, group = "Turno")
+
+require(here)
