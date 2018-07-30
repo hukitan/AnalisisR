@@ -1,0 +1,28 @@
+####
+rc <- summarySE(wm_RC, measurevar="value", groupvars=c("Tarea","Dificultad"))
+ggplot(rc, aes(x=factor(Tarea), y=value, fill=Tarea)) + 
+  geom_bar(position=position_dodge(), stat="identity") +
+  geom_errorbar(aes(ymin=value-se, ymax=value+se), width=.3) +
+  xlab("Tarea") +
+  ylab("% de respuestas correctas") +
+scale_fill_hue(name="Tarea", # Legend label, use darker colors
+               breaks=c("Mt", "Mp"),
+               labels=c("Mantenimiento", "Manipulación")) +
+  ggtitle("Porcentaje de respuestas correctas\n por tareas") +
+  theme_bw()
+
+#####
+rc <- summarySE(wm_RC, measurevar="value", groupvars=c("Tarea","Dificultad","Turno"))
+ggplot(rc, aes(x=factor(Tarea), y=value, fill=Turno)) + 
+  geom_bar(position=position_dodge(), stat="identity") +
+  geom_errorbar(aes(ymin=value-se, ymax=value+se), 
+                width=.3,
+                position=position_dodge(.9)) +
+  xlab("Tarea") +
+  ylab("% de respuestas correctas") +
+
+  scale_fill_hue(name="Turno", # Legend label, use darker colors
+                 breaks=c("1", "2", "3"),
+                 labels=c("Mañana", "Tarde", "Noche")) +
+  ggtitle("Porcentaje de respuestas correctas\n por turno") +
+  theme_minimal()
