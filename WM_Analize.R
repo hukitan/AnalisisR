@@ -1,7 +1,6 @@
 library(readxl)
-library(tidyverse)
 library(ez)
-source("summarySE.R")
+library(tidyverse)
 # Importar y Ordenar datos ---------------------------------------------------
 datos_wm_wide <- read_excel("WMdatos.xlsx", sheet = "Resultados")
 # Es muy importante que los nombres de columna tengan un patron de
@@ -42,7 +41,7 @@ p.adjust.method = "bonferroni"
 )
 #otra manera de hacer el ANOVA
 
-summary(aov(data = wm_RC, formula = value ~ Turno * Tarea + Error(Sujeto)))
+aovrc2 <- summary(aov(data = wm_RC, formula = value ~ Turno * Tarea + Error(Sujeto)))
 
 # Anova por RT ---------------------------------------------
 wm_RT <- filter(datos_wm, Modalidad == "RT" && Dificultad == "HL")
@@ -61,7 +60,4 @@ aovdprim <- ezANOVA(
 )
 
 
-# para algo servira tener las descipciones ----------------
-wm_RC_desc <- psych::describeBy(datos_wm_wide, group = "Turno")
 
-require(here)

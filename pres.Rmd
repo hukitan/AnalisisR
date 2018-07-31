@@ -64,15 +64,23 @@ wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad == "HL")
 
 ![Fantasma misterioso](fantasma.jpeg)
 
-```{r results = 'asis', message= FALSE}
-summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad")) %>%
-knitr::kable(caption = "Tabla 1")
+```{r results = 'asis', message= FALSE, warning=FALSE, echo=FALSE}
+
+sgmm <- "±"
+source("tabla.R")
+titulo <- c(" ", "Mañana", "Tarde", "Noche", "Estadistica", "p")
+names(tabla) <- titulo
+
+knitr::kable(tabla,caption = "Tabla 1 ")
 ``` 
 
 ## Solo summary
 
-```{r cars, echo = TRUE}
+
+
+```{r cars, echo=FALSE}
 summary(wm_RC)
+
 ```
 
 ## Graficas

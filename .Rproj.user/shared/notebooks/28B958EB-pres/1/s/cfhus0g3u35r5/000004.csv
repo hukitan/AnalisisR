@@ -1,2 +1,0 @@
-"0","summarySE(wm_RC, measurevar = ""value"", groupvars = c(""Tarea"", ""Dificultad"")) %>%"
-"0","knitr::kable(caption = ""Tabla 1"")"

@@ -18,7 +18,7 @@ summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad")) %>%
   ) +
   ggtitle("Porcentaje de respuestas correctas\n por tareas") +
   ylim(c(0, 100)) +
-  theme_minimal()
+  theme_minimal() +
 ggsave("graf/tarea.png")
 
 ##### Grafica por tarea x turno -------------
@@ -39,7 +39,7 @@ summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad", "Tur
   ) +
   ggtitle("Porcentaje de respuestas correctas\n por turno y tarea") +
   ylim(c(0, 100)) +
-  theme_minimal()
+  theme_minimal() +
 ggsave("graf/tarxtur.png")
 ##### Grafica por turno -------------
 summarySE(wm_RC, measurevar = "value", groupvars = c("Dificultad", "Turno")) %>%
@@ -60,6 +60,6 @@ summarySE(wm_RC, measurevar = "value", groupvars = c("Dificultad", "Turno")) %>%
   ggtitle("Porcentaje de respuestas correctas\n por turno") +
   ylim(c(0, 100)) +
   theme_minimal() +
-  theme(axis.ticks.x = element_blank(),axis.text.x = element_blank())
+  theme(axis.ticks.x = element_blank(),axis.text.x = element_blank()) +
   ggsave("graf/turno.png")
   

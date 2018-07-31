@@ -1,21 +1,10 @@
 "0","knitr::opts_chunk$set(echo = FALSE)"
 "0","library(readxl)"
 "0","library(tidyverse)"
-"0","source(""summarySE.R"")"
-"0","# Importar y Ordenar datos ---------------------------------------------------"
-"0","datos_wm_wide <- read_excel(""WMdatos.xlsx"", sheet = ""Resultados"")"
-"0",") %>%"
-"0","  separate(dificultad_tarea, c(""Tarea"", ""dificultad_modalidad""), sep = 2) %>%"
-"0","  separate(dificultad_modalidad, c(""Dificultad"", ""Modalidad""), sep = 2) %>%"
-"0","  arrange(Sujeto, Tarea, Dificultad)"
-"0","datos_wm$Tarea <- factor(datos_wm$Tarea, ordered = F)"
-"0","datos_wm$Turno <- factor(datos_wm$Turno,"
-"0","                         #levels = c(""Mañana"",""Tarde"",""Noche""),"
-"0","                         ordered = T)"
-"0","datos_wm$Dificultad <- factor(datos_wm$Dificultad,"
-"0","  levels = c(""LL"", ""HL""),"
-"0","  ordered = T"
-"0",")"
-"0","# Anova por respuestas correctas ------------------------------------------"
-"0","wm_RC <- filter(datos_wm, Modalidad == ""RC"" & Dificultad == ""HL"")"
-"0","#wm_RC <- filter(datos_wm, Modalidad == ""RC"")"
+"2","[37m-- [1mAttaching packages[22m --------------------------------------- tidyverse 1.2.1 --[39m
+"
+"2","[37m[32mv[37m [34mggplot2[37m 3.0.0     [32mv[37m [34mpurrr  [37m 0.2.5
+[32mv[37m [34mtibble [37m 1.4.2     [32mv[37m [34mdplyr  [37m 0.7.6
+[32mv[37m [34mtidyr  [37m 0.8.1     [32mv[37m [34mstringr[37m 1.3.1
+[32mv[37m [34mreadr  [37m 1.1.1     [32mv[37m [34mforcats[37m 0.3.0[39m
+"
