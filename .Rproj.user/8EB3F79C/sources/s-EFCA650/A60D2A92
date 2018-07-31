@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532717403399.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "77|45|95|0|\n97|46|116|0|\n118|43|138|0|\n",
+    "hash" : "0",
+    "id" : "A60D2A92",
+    "lastKnownWriteTime" : 1532728648,
+    "last_content_update" : 1532728769991,
+    "path" : "C:/Users/Dell/Dropbox/lngc/WM/Datos para tesis FINAL/Analisis en R/pres.Rmd",
+    "project_path" : "pres.Rmd",
+    "properties" : {
+        "cursorPosition" : "75,0",
+        "last_setup_crc32" : "EFCA6507afe20ef",
+        "scrollLine" : "48",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

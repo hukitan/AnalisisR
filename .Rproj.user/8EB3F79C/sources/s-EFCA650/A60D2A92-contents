@@ -1,0 +1,139 @@
+---
+title: "Resultados"
+author: Elias Mina
+output:
+  powerpoint_presentation:
+    reference_doc: base.pptx
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readxl)
+library(tidyverse)
+source("summarySE.R")
+# Importar y Ordenar datos ---------------------------------------------------
+datos_wm_wide <- read_excel("WMdatos.xlsx", sheet = "Resultados")
+datos_wm <- gather(
+  datos_wm_wide, dificultad_tarea, value,
+  -c(Turno, Sujeto, ShipleyPE, Prefsub, CT, Ctgrupo)
+) %>%
+  separate(dificultad_tarea, c("Tarea", "dificultad_modalidad"), sep = 2) %>%
+  separate(dificultad_modalidad, c("Dificultad", "Modalidad"), sep = 2) %>%
+  arrange(Sujeto, Tarea, Dificultad)
+
+datos_wm$Tarea <- factor(datos_wm$Tarea, ordered = F)
+datos_wm$Turno <- factor(datos_wm$Turno,
+                         #levels = c("Mañana","Tarde","Noche"),
+                         ordered = T)
+datos_wm$Dificultad <- factor(datos_wm$Dificultad,
+  levels = c("LL", "HL"),
+  ordered = T
+)
+
+
+# Anova por respuestas correctas ------------------------------------------
+wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad == "HL")
+#wm_RC <- filter(datos_wm, Modalidad == "RC")
+```
+
+# Introducción
+## Memoria de trabajo
+
+- La memoria de trabajo es un almacén de información temporal orientado a un objetivo o meta que permite la interacción con el mundo (Baddeley, 2001).
+- Es un almacén de capacidad limitada, en la cantidad de información que puede ser almacenada simultáneamente, así como por la complejidad de la información (Eriksson et al., 2015; Baddeley, 2001).
+
+##
+
+- Se postuló el modelo de memoria de trabajo por Baddeley y Hitch (1974) 
+- No mantiene de forma pasiva la información
+
+##
+
+- Se reconocen al menos dos subprocesos dentro de la memoria de trabajo, el mantenimiento y la manipulación de información.
+- El mantenimiento: La capacidad para retener información a corto plazo (Eriksson et al., 2015).
+- La manipulación: La reorganización de información (Veltman, Rombouts, y Dolan, 2003).
+
+##
+
+- Diversos estudios han mostrado que la manipulación se asocia a menor porcentaje de respuestas correctas y mayor tiempo de reacción (D’Esposito, Postle, Ballard, y Lease, 1999; Glahn et al., 2002; Liu, Guo, y Luo, 2010).
+
+
+##
+
+![Fantasma mamon](fantasma.jpeg)
+
+```{r results = 'asis', message= FALSE}
+summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad")) %>%
+knitr::kable(caption = "Tabla 1")
+``` 
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(wm_RC)
+```
+
+## Slide with Plot
+```{r pressure, echo = FALSE, message= FALSE}
+summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad")) %>%
+  ggplot(aes(x = factor(Tarea), y = value, fill = Tarea)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+  geom_errorbar(aes(ymin = value - se, ymax = value + se),
+    width = .3,
+    size = .6
+  ) +
+  xlab("Tarea") +
+  ylab("% de respuestas correctas") +
+  scale_fill_hue(
+    name = "Tarea", # Legend label, use darker colors
+    breaks = c("Mt", "Mp"),
+    labels = c("Mantenimiento", "Manipulación")
+  ) +
+  ggtitle("Porcentaje de respuestas correctas\n por tareas") +
+  ylim(c(0, 100)) +
+  theme_minimal()
+```
+## Grafica 2
+```{r pressure2, echo = FALSE, message= FALSE}
+summarySE(wm_RC, measurevar = "value", groupvars = c("Tarea", "Dificultad", "Turno")) %>%
+  ggplot(aes(x = factor(Tarea), y = value, fill = Turno)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+  geom_errorbar(aes(ymin = value - se, ymax = value + se),
+    width = .3,
+    size = .6,
+    position = position_dodge(.9)
+  ) +
+  xlab("Tarea") +
+  ylab("% de respuestas correctas") +
+  scale_fill_hue(
+    name = "Turno", # Legend label, use darker colors
+    breaks = c("1", "2", "3"),
+    labels = c("Mañana", "Tarde", "Noche")
+  ) +
+  ggtitle("Porcentaje de respuestas correctas\n por turno y tarea") +
+  ylim(c(0, 100)) +
+  theme_minimal()
+```
+## Grafica 3
+```{r pressure3, echo=FALSE, message=FALSE}
+summarySE(wm_RC, measurevar = "value", groupvars = c("Dificultad", "Turno")) %>%
+  ggplot(aes(x = factor(Turno), y = value, fill = Turno)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+  geom_errorbar(aes(ymin = value - se, ymax = value + se),
+    width = .3,
+    size = .6,
+    position = position_dodge(.9)
+  ) +
+  xlab("Turno") +
+  ylab("% de respuestas correctas") +
+  scale_fill_hue(
+    name = "Turno", # Legend label, use darker colors
+    breaks = c("1", "2", "3"),
+    labels = c("Mañana", "Tarde", "Noche")
+  ) +
+  ggtitle("Porcentaje de respuestas correctas\n por turno") +
+  ylim(c(0, 100)) +
+  theme(axis.ticks.x = element_blank(),axis.text.x = element_blank()) +
+  theme_minimal()
+```
