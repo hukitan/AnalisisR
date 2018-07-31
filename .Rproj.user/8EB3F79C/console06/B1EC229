@@ -1,104 +1,0 @@
-[0m[0KWindows PowerShell[0K[?25l
-Copyright (C) Microsoft Corporation. Todos los derechos reservados.[0K
-[0K
-[0K[?25hPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote add [0Ko
-rigin git@github.com:hukitan/AnalisisR.git[0K
->> [0;33;93mgit[0m push [0;37;90m-u[0m origin master[0K[?25h[?25l
-[0K[?25hThe authenticity of host 'github.com (192.30.253.113)' can't be established.[0K[?25l
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.[0K
-Are you sure you want to continue connecting (yes/no)?[0K[56G[?25h[?25lAre you sure you want to continue connecting (yes/no)? y[0K[?25he[0Ks[0K[?25l
-[0K[?25hWarning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known host[0Ks[?25l
-.[0K
-[0K[?25hgit@github.com: Permission denied (publickey).[0K[?25l
-fatal: Could not read from remote repository.[0K
-[0K
-Please make sure you have the correct access rights[0K
-and the repository exists.[0K
-[0K[?25hPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote add [0Ko
-rigin git@github.com:hukitan/AnalisisR.git[0K
->> [0;33;93mgit[0m push [0;37;90m-u[0m origin master[0K[?25h[?25l
-[0K[?25hWarning: Permanently added the RSA host key for IP address '192.30.253.112' to the lis[0Kt[?25l
- of known hosts.[0K
-[0K[?25hEnter passphrase for key '/c/Users/Dell/.ssh/id_rsa':[0K[55G[?25l
-Enter passphrase for key '/c/Users/Dell/.ssh/id_rsa':[0K[55G[?25h[?25l
-Enter passphrase for key '/c/Users/Dell/.ssh/id_rsa':[0K[55G[?25h[?25l
-git@github.com: Permission denied (publickey).[0K
-fatal: Could not read from remote repository.[0K
-[0K
-Please make sure you have the correct access rights[0K
-and the repository exists.[0K
-[0K[?25hPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote add [0Ko
-rigin git@github.com:hukitan/AnalisisR.git[0K
->> [0;33;93mgit[0m push [0;37;90m-u[0m origin master[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m origin maste[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m origin mast[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m ori[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m or[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m o[0K[?25h[?25l>> [0;33;93mgit[0m push [0;37;90m-u[0m[0K[16G[?25h[15G[?25l>> [0;33;93mgit[0m push [0;37;90m-[0m[0K[?25h[?25l>> [0;33;93mgit[0m push[0K[13G[?25h[12G[?25l>> [0;33;93mgit[0m pus[0K[?25h[?25l>> [0;33;93mgit[0m pu[0K[?25h[?25l>> [0;33;93mgit[0m[0K[8G[?25h[7G[?25l>> [0;33;93mgi[0m[0K[?25h[?25l>> [0;33;93mg[0m[0K[?25h[?25l[0K[1A[43G[?25h[?25lrigin git@github.com:hukitan/AnalisisR.g[0K
-[0K[1A[41G[?25h[?25lrigin git@github.com:hukitan/AnalisisR.[0K
-[0K[1A[40G[?25h[?25lrigin git@github.com:hukitan/AnalisisR[0K
-[0K[1A[39G[?25h[?25lrigin git@github.com:hukitan/Analisis[0K
-[0K[1A[38G[?25h[?25lrigin git@github.com:hukitan/Analis[0K
-[0K[1A[36G[?25h[?25lrigin git@github.com:hukitan/Anali[0K
-[0K[1A[35G[?25h[?25lrigin git@github.com:hukitan/Anal[0K
-[0K[1A[34G[?25h[?25lrigin git@github.com:hukitan/An[0K
-[0K[1A[32G[?25h[?25lrigin git@github.com:hukitan/A[0K
-[0K[1A[31G[?25h[?25lrigin git@github.com:hukitan/[0K
-[0K[1A[30G[?25h[?25lrigin git@githu[0K
-[0K[1A[16G[?25h[?25lrigin git@gith[0K
-[0K[1A[15G[?25h[?25lrigin git@git[0K
-[0K[1A[14G[?25h[?25lrigin git@gi[0K
-[0K[1A[13G[?25h[86G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote ad[0K
-[0K
-[0K[2A[85G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote a[0K
-[0K
-[0K[2A[84G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remote[0K
-[0K
-[0K[2A[83G[?25h[82G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remot[0K
-[0K
-[0K[2A[81G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m remo[0K
-[0K
-[0K[2A[80G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m rem[0K
-[0K
-[0K[2A[79G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m re[0K
-[0K
-[0K[2A[78G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m r[0K
-[0K
-[0K[2A[77G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m ori[0Kg
-in master[0K
-[0K[1A[10G[?25h[?25l
-[?25hEnter passphrase for key '/c/Users/Dell/.ssh/id_rsa':[0K[55G[?25l
-Enter passphrase for key '/c/Users/Dell/.ssh/id_rsa':[0K[55G[?25h[?25l
-git@github.com: Permission denied (publickey).[0K
-fatal: Could not read from remote repository.[0K
-[0K
-Please make sure you have the correct access rights[0K
-and the repository exists.[0K
-PS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25h[?25l
-[0K[?25hTo github.com:hukitan/AnalisisR.git[0K[?25l
- * [new branch]      master -> master[0K
-[0K[?25hBranch 'master' set up to track remote branch 'master' from 'origin'.[0K[?25l
-PS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m ori[0Kg
-in master[0K[?25h[?25lin maste[0K[?25h[?25lin mas[0K[?25h[?25lin ma[0K[?25h[?25lin m[0K[?25h[?25lin [0;37;90m*[0m[0K[?25hCounting objects: 90, done.[0K[?25l
-[0K[?25hDelta compression using up to 4 threads.[0K[?25l
-Compressing objects:   9% (7/74)[0K[1G[?25h[?25lCompressing objects:  24% (18/74)[0K[1G[?25hCompressing objects: 100% (74/74), done.[0K[?25l
-Writing objects:   5% (5/90)[0K[1G[?25h[?25lWriting objects:  75% (68/90)[0K[1G[?25h[?25lWriting objects:  85% (77/90)[0K[1G[?25h[?25lWriting objects:  86% (78/90)[0K[1G[?25h[?25lWriting objects:  91% (82/90)[0K[1G[?25hTo github.com:hukitan/AnalisisR.git[0K[?25l
- * [new branch]      Solo_HL -> Solo_HL[0K
- * [new branch]      origin/master -> origin/master[0K
-[0K[?25hBranch 'master' set up to track remote branch 'master' from 'origin'.[0K[?25l
-Branch 'Solo_HL' set up to track remote branch 'Solo_HL' from 'origin'.[0K
-[0K[?25hPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m ori[0Kg
-in [0;37;90m*[0m[0K[?25h[?25lin[0K[4G[?25h[3G[?25li[0K[?25h[?25l[0K[?25h[?25l[1APS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m ori[0K
-[0K[1A[87G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m or[0K
-[0K[1A[86G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m push [0;37;90m-u[0m o[0K
-[0K[1A[85G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m p[0K
-[0K[1A[77G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m[0K
-[0K[1A[76G[?25h[75G[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgi[0m[0K
-[0K[1A[74G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mg[0m[0K
-[0K[1A[73G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K
-[0K[1A[72G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mg[0m[0K
-[0K[1A[73G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m[0K
-[0K[1A[75G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m pul[0K
-[0K[1A[79G[?25h[?25lPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R> [0;33;93mgit[0m pull[0K
-[0K[1A[80G[?25h[?25l
-[?25hremote: Counting objects: 1, done.[0K[?25l
-remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0[0K
-[0K[?25h[?25lUnpacking objects: 100% (1/1), done.[0K[1G[?25h[?25l
-[0K[?25hYour configuration specifies to merge with the ref 'refs/heads/Solo_HL'[0K[?25l
-from the remote, but no such ref was fetched.[0K
-[0K[?25hPS C:\Users\Dell\Dropbox\lngc\WM\Datos para tesis FINAL\Analisis en R>[0K[72G
