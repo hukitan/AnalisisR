@@ -44,7 +44,7 @@ p.adjust.method = "bonferroni"
 aovrc2 <- summary(aov(data = wm_RC, formula = value ~ Turno * Tarea + Error(Sujeto)))
 
 # Anova por RT ---------------------------------------------
-wm_RT <- filter(datos_wm, Modalidad == "RT" && Dificultad == "HL")
+wm_RT <- filter(datos_wm, Modalidad == "RT" & Dificultad == "HL")
 
 aovrt <- ezANOVA(
   data = wm_RT, dv = value, wid = Sujeto, between = Turno,
@@ -53,7 +53,7 @@ aovrt <- ezANOVA(
 
 
 # ANOVA por d' -----------------------------------------
-wm_Dprim <- filter(datos_wm, Modalidad == "dp")
+wm_Dprim <- filter(datos_wm, Modalidad == "dp"  & Dificultad == "HL")
 aovdprim <- ezANOVA(
   data = wm_Dprim, dv = value, wid = Sujeto,
   between = Turno, within = .(Tarea, Dificultad)
