@@ -1,6 +1,6 @@
 ---
-title: "Resultados"
-author: Elias Mina
+title: "Resultados de la tesis"
+author: Elias Mina Solorzano
 output:
   powerpoint_presentation:
     reference_doc: base.pptx
@@ -60,28 +60,12 @@ wm_RC <- filter(datos_wm, Modalidad == "RC" & Dificultad == "HL")
 - Diversos estudios han mostrado que la manipulación se asocia a menor porcentaje de respuestas correctas y mayor tiempo de reacción (D’Esposito, Postle, Ballard, y Lease, 1999; Glahn et al., 2002; Liu, Guo, y Luo, 2010).
 
 
-## insertamos algunas cosas
+# Resultados
 
-![Fantasma misterioso](fantasma.jpeg)
+## Datos de la muestra
 
-```{r results = 'asis', message= FALSE, warning=FALSE, echo=FALSE}
+![Tabla demografica](tabla.png) 
 
-sgmm <- "±"
-source("tabla.R")
-titulo <- c(" ", "Mañana", "Tarde", "Noche", "Estadistica", "p")
-names(tabla) <- titulo
-
-knitr::kable(tabla,caption = "Tabla 1 ")
-``` 
-
-## Solo summary
-
-
-
-```{r cars, echo=FALSE}
-summary(wm_RC)
-
-```
 
 ## Graficas
 ```{r pressure, echo = FALSE, message= FALSE}
